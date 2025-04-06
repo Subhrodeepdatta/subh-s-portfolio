@@ -3,39 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me | Subhrodeep Datta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="theme-toggle-container">
-            <button id="theme-toggle" class="theme-toggle">Switch Theme</button>
+    <div id="loader" class="loader">
+        <div class="simple-loader">
+            <div class="spinner"></div>
+            <p>Loading...</p>
         </div>
-        <h1>About Me</h1>
-        <nav>
+    </div>
+
+    <div class="logo-container">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo" class="site-logo">
+        </div>
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon hidden"></i>
+        </button>
+    </div>
+
+    <header>
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#videos">Videos</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <h2>About Me</h2>
-        <div class="profile">
+        <div class="profile" data-aos="zoom-in">
             <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
-            <p> I am a student at Adamas University, currently pursuing a Bachelor of Computer Applications (BCA). <br>This portfolio is designed to showcase my academic progress and personal projects.<br><br>
-                Apart from my studies, I am a renowned wedding video editor based in Kolkata.<br>I have  worked with numerous companies, creating memorable and high-quality wedding videos.<br> My passion for storytelling through visuals drives me to continuously improve and innovate in my field.</p>
-        </div> 
+            <p>
+                I hail from the culturally rich city of Kolkata, India, where my passion for learning has always been a driving force.<br><br>
+                
+                Currently, I am immersed in the world of academics at Adamas University, where I am diligently pursuing a Bachelor of Computer Applications (BCA) degree.<br><br>
+                
+                My academic journey is complemented by a diverse array of hobbies that keep me engaged and balanced. I find immense joy in playing various musical instruments, which allows me to express my creativity. Trekking offers me a way to connect with nature and challenge myself physically, while gaming provides a fun and competitive outlet. Additionally, my interest in video editing allows me to blend technology with storytelling, creating compelling visual content.<br><br>
+                
+                Professionally, I have had the privilege of working in the corporate field for nearly five years, primarily in media productions. I currently serve as the Lead Post-Production Manager at a renowned wedding company, where I oversee the entire post-production process, ensuring high-quality outcomes. My experience also extends to freelancing, where I have honed my skills and delivered projects across various domains.<br><br>
+                
+                Building this website is a testament to my continuous pursuit of knowledge and my commitment to staying ahead in the digital age. It marks another milestone in my career, one that I believe will significantly enhance my professional profile and open new avenues for growth.
+            </p>
+            <a href="resume.pdf" class="cta-button" download>Download Resume</a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 My Portfolio</p>
+        <p>© 2025 Subhrodeep Datta. All Rights Reserved.</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
